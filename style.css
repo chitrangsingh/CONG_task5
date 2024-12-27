@@ -1,0 +1,141 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-weight: bolder;
+}
+.slider{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.slides{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.images{
+    position: relative;
+    max-height: 80%;
+    width: 90%;
+    display: flex;
+}
+img.displayslide{
+    display:none;
+} */
+
+
+
+/* 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 600px;
+}
+
+.slides {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.images {
+    position: relative;
+    max-height: 80%;
+    width: 90%;
+    display: none;
+}
+
+.displayslide {
+    display: block; 
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    z-index: 10; 
+}
+
+button.prev {
+    left: 10px; 
+}
+
+button.next {
+    right: 10px; 
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 1); 
+} */
+
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 600px; /* Set the width of the slideshow */
+    margin: auto;
+    overflow: hidden; /* Hide overflow */
+}
+
+.slide {
+    display: none; /* Hide all slides by default */
+}
+
+.slide img {
+    /* width: 100%; 
+    height: auto; */
+    position: relative;
+    max-height: 80%;
+    width: 90%;
+}
+
+.fade {
+    animation: fade 1.5s ease-in-out; /* Fade animation */
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
