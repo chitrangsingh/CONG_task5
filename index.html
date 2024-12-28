@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>Image Slideshow</title>
 </head>
 <body>
     <h1>Image Slideshow</h1>
     <div class="slideshow-container">
         <div class="slide fade">
-            <img src="images/car-image1.jfif" alt="Image 1">
+            <img src="images/newCar1.jpg" alt="Image 1">
         </div>
         <div class="slide fade">
-            <img src="images/car-image2.jfif" alt="Image 2">
+            <img src="images/newcar2.jpg" alt="Image 2">
         </div>
         <div class="slide fade">
-            <img src="images/car_image3.jpg" alt="Image 3">
+            <img src="images/newcar3.jpg" alt="Image 3">
         </div>
         <!-- Add more images as needed -->
-        <button class="prev" onclick="prevslide()"><</button>
-        <button class="next" onclick="nextslide()">></button>
+        <button class="prev" onclick="changeSlide(-1)"><</button>
+        <button class="next" onclick="changeSlide(1)">></button>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
